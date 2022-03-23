@@ -101,50 +101,95 @@ nav span {
     color: var(--black);
 }
 
-/* Main Image */
+/* Main Profile */
 
-.main-image-blog {
-    width: 80%;
-    margin: 0 auto;
+.main-profile {
+    height: 350px;
+    display: grid;
+    place-items: center;
+    background-color: var(--light-gray);
 }
 
-.main-image-blog img {
+.profile-container-card {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.profile-container-card figure {
+    width: 400px;
+}
+
+.profile-container-card img {
     width: 100%;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
-/* Main article */
-
-.main-article-blogpost {
-    width: 80%;
-    margin: 0 auto;
+.profile-container-card p:nth-child(1) {
+    margin-top: 40px;
+    font-size: 3rem;
+    font-weight: var(--bold-roboto);
 }
 
-.main-article-blogpost .news {
-    width: 90%;
-    margin: 20px auto;
-    padding: 10px 0px;
-    border-bottom: 1px solid var(--light-gray);
+.profile-container-card p:nth-child(2) {
     font-size: 1.8rem;
-    font-weight: var(--bold-roboto);
-}
-
-.main-article-blogpost article {
-    width: 90%;
-    margin: 0 auto;
-}
-
-.main-article-blogpost h1 {
-    font-size: 2.4rem;
-    letter-spacing: 1px;
-    font-weight: var(--bold-roboto);
-}
-
-.main-article-blogpost article p {
-    margin: 10px 0px;
-    font-size: 1.4rem;
-    line-height: 2.6rem;
     font-weight: var(--medium-roboto);
+    line-height: 2.6rem;
+    letter-spacing: 0.5px;
+}
+
+/* Main Inferior */
+
+.main-bottom-container h2 {
+    width: 70%;
+    padding: 0 0 10px 0;
+    margin: 30px auto;
+    text-align: center;
+    border-bottom: 1px solid var(--light-gray);
+    font-size: 2.4rem;
+}
+
+/* Contenedores de los articulos */
+
+.bottom-container-articles {
+    width: 80%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    justify-content: center;
+    align-items: center;
+    place-items: start;
+    gap: 10px;
+}
+
+.bottom-container-articles article {
+    width: 90%;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+}
+
+.internal-card-container {
+    padding: 0px 10px;
+}
+
+/* Contenido de los articulos */
+
+.bottom-container-articles h3 {
+    margin: 10px auto;
+    font-size: 1.6rem;
+}
+
+.bottom-container-articles p {
+    margin: 10px auto;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+}
+
+.bottom-container-articles .generic-button {
+    background-color: var(--white);
+    border-radius: 5px;
 }
 
 /* Main contact */
