@@ -1,13 +1,12 @@
-/* 320 - 767 // 768 - 1023 // 1024 - +++ */
-
-
 /* Configuración de variables */
 
 :root {
     /* Colores */
     --white: #ffffff;
     --black: #000000;
+    --warm-black: #282623;
     --light-green: #47cfac;
+    --light-gray: #dddddd;
     /* Tamaño de fuente */
     --light-roboto: 300;
     --medium-roboto: 500;
@@ -24,12 +23,6 @@
 html {
     font-size: 62.5%;
     font-family: 'Roboto', sans-serif;
-    width: 100%;
-    height: 100vh;
-    background-image: url(../assets/img/Cover.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 a {
@@ -105,44 +98,23 @@ nav span {
 .main-top-container a {
     font-size: 25px;
     font-weight: var(--bold-roboto);
-    color: var(--white);
+    color: var(--black);
 }
 
-/* Main inferior */
+/* Footer */
 
-.main-bottom-container {
-    display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
+.contact-information {
+    width: 100%;
+    height: 80px;
+    border-top: 20px solid var(--light-green);
+    background-color: var(--warm-black);
 }
 
-.main-bottom-container div {
-    margin-top: 80px;
-    display: grid;
-    grid-column: 2;
-    justify-items: center;
-}
-
-.main-bottom-container h1 {
-    font-size: 40px;
-    font-weight: var(--bold-roboto);
-    letter-spacing: 10px;
-    color: var(--white);
+.contact-information p {
+    padding-top: 20px;
     text-align: center;
-}
-
-.main-bottom-container button {
-    margin-top: 40px;
-    width: 140px;
-    height: 60px;
-    background-color: var(--light-green);
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.main-bottom-container button a {
     color: var(--white);
-    font-size: 20px;
-    font-weight: var(--bold-roboto);
+    font-size: 1.4rem;
+    line-height: 1.8rem;
     letter-spacing: 1px;
 }

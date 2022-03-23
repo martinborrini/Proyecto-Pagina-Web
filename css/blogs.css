@@ -1,0 +1,257 @@
+/* Configuración de variables */
+
+:root {
+    /* Colores */
+    --white: #ffffff;
+    --black: #000000;
+    --warm-black: #282623;
+    --light-green: #47cfac;
+    --light-gray: #dddddd;
+    /* Tamaño de fuente */
+    --light-roboto: 300;
+    --medium-roboto: 500;
+    --bold-roboto: 700;
+}
+
+/* Configuración inicial */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* Header */
+
+header {
+    width: 100%;
+    height: 50px;
+}
+
+/* Barra de navegación */
+
+nav {
+    width: 100%;
+    height: 50px;
+    background-color: var(--light-green);
+}
+
+nav ul {
+    height: 10%;
+    padding: 10px 0px;
+    margin: 0px 50px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav span {
+    color: var(--white);
+}
+
+/* Main */
+
+/* Main superior */
+
+.main-top-container {
+    width: 100%;
+    height: 90px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.main-top-container figure {
+    width: 300px;
+    height: 90px;
+}
+
+.main-logo {
+    height: 90px;
+}
+
+.main-top-container--button {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 50px;
+}
+
+.main-top-container button {
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+}
+
+.main-top-container a {
+    font-size: 25px;
+    font-weight: var(--bold-roboto);
+    color: var(--black);
+}
+
+/* Main intermedio */
+
+.main-middle-container {
+    width: 100%;
+    height: 400px;
+    background-color: var(--light-gray);
+}
+
+/* Contenedor principal */
+
+.principal-middle-container {
+    width: 90%;
+    height: 400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    place-items: center;
+}
+
+/* Contenedor izquierdo */
+
+.left-container p {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: var(--bold-roboto);
+}
+
+.left-container figure {
+    width: 500px;
+    margin-bottom: 20px;
+}
+
+.representative-blogpost-image {
+    width: 100%;
+}
+
+/* Contenedor derecho */
+
+.right-container {
+    margin: 0 10%;
+    display: grid;
+    grid-template-rows: 1fr 4fr 1fr;
+    align-items: center;
+    place-items: start;
+}
+
+.right-container h1 {
+    font-size: 2.2rem;
+    padding-bottom: 10px;
+    font-weight: var(--bold-roboto);
+}
+
+.right-container p {
+    height: 150px;
+    margin-right: 20%;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.5px;
+    font-weight: var(--medium-roboto);
+}
+
+.generic-button {
+    padding: 10px 15px;
+    background-color: var(--light-gray);
+    border: 1px solid var(--light-green);
+    font-size: 1.5rem;
+}
+
+.generic-button a {
+    color: var(--black);
+    font-weight: var(--medium-roboto);
+}
+
+/* Main Inferior */
+
+.main-bottom-container h2 {
+    width: 70%;
+    padding: 0 0 10px 0;
+    margin: 30px auto;
+    text-align: center;
+    border-bottom: 1px solid var(--light-gray);
+    font-size: 2.4rem;
+}
+
+/* Contenedores de los articulos */
+
+.bottom-container-articles {
+    width: 80%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    justify-content: center;
+    align-items: center;
+    place-items: start;
+    gap: 10px;
+}
+
+.bottom-container-articles article {
+    width: 90%;
+    height: 350px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+}
+
+.internal-card-container {
+    padding: 0px 10px;
+}
+
+/* Contenido de los articulos */
+
+.bottom-container-articles figure {
+    margin-top: 15px;
+}
+
+.bottom-container-articles img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.bottom-container-articles h3 {
+    margin: 10px auto;
+    font-size: 1.6rem;
+}
+
+.bottom-container-articles p {
+    margin: 10px auto;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+.bottom-container-articles .generic-button {
+    background-color: var(--white);
+    border-radius: 5px;
+}
+
+/* Footer */
+
+.contact-information {
+    width: 100%;
+    height: 80px;
+    border-top: 20px solid var(--light-green);
+    background-color: var(--warm-black);
+}
+
+.contact-information p {
+    padding-top: 20px;
+    text-align: center;
+    color: var(--white);
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    letter-spacing: 1px;
+}
